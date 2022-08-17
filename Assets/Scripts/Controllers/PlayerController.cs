@@ -41,13 +41,12 @@ public class PlayerController : CharacterController
     void Movement()
     {
         //Rotates tanks to turn 
-        Vector3 rotate = new Vector3(0f, HorizontalInput, 0f) * Time.deltaTime * TankStats.TurnSpeed;
+        Vector3 rotate = new Vector3(0f, HorizontalInput, 0f) * TankStats.TurnSpeed * Time.deltaTime;
         
         transform.Rotate(rotate);
 
         //Allows tank to face direction locally to always move forward
-        transform.position += VerticalInput * transform.forward * Time.deltaTime * TankStats.MoveSpeed;
-        //rb.velocity = VerticalInput * transform.forward * TankStats.MoveSpeed;
+        rb.velocity = (VerticalInput * transform.forward) * TankStats.MoveSpeed;
     }
     public override void Death()
     {

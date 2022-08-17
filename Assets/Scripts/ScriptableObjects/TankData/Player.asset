@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   Health: 100
-  MoveSpeed: 8
+  MoveSpeed: 10
   TurnSpeed: 180
-  Projectile: {fileID: 6615027439513799364, guid: a55170f7935bbed4faa97c97c162bcb2, type: 3}
+  SightRange: 10
+  HearRange: 5
+  Projectile: {fileID: 1033160505375900985, guid: 3838fd2f61f11d94d96218686142ead4, type: 3}
   ProjectileSpeed: 20
   ProjectileFirerate: 0.7

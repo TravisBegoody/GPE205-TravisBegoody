@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     
-    private List<PlayerController> Players = new List<PlayerController>();
-    private List<EnemyController> Enemys = new List<EnemyController>();
+    [SerializeField]private List<PlayerController> Players = new List<PlayerController>();
+    [SerializeField]private List<EnemyController> Enemys = new List<EnemyController>();
     private void Awake()
     {
         if(Instance != null)
@@ -17,27 +17,29 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void AddPlayer(PlayerController player)
     {
         Players.Add(player);
     }
+    public PlayerController GetPlayer1() { return Players[0]; }
     public void RemovePlayer(PlayerController player)
     {
         if (Players.Contains(player))
         {
             Players.Remove(player);
         }
+    }
+    //Checks if the position is a player
+    public bool IsPlayer(Vector3 position)
+    {
+        foreach(PlayerController player in Players)
+        {
+            if(player.transform.position == position)
+            {
+                return true;
+            }
+        }
+        return false;
     }
     public void AddEnemy(EnemyController enemy)
     {
@@ -49,5 +51,16 @@ public class GameManager : MonoBehaviour
         {
             Enemys.Remove(enemy);
         }
+    }
+    public bool IsEnemy(Vector3 position)
+    {
+        foreach (EnemyController enemy in Enemys)
+        {
+            if (enemy.transform.position == position)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

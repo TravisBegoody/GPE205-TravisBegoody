@@ -36,6 +36,12 @@ public class CharacterController : MonoBehaviour
     {
         Shoot();
     }
+    //Keeps creatures from floating off
+    protected void Gravity()
+    {
+        Vector3 gravity = new Vector3(rb.velocity.x,rb.velocity.y - 5f, rb.velocity.z);
+        rb.velocity = gravity;
+    }
     /// <summary>
     /// Allows the tank to shoot a bullet
     /// </summary>
@@ -56,6 +62,29 @@ public class CharacterController : MonoBehaviour
             
             
             bullet.GetComponent<Rigidbody>().velocity = transform.forward * TankStats.ProjectileSpeed;
+            bullet.GetComponent<BulletController>().Shooter = this.gameObject;
+
+            lastShot = 0f;
+        }
+    }
+    protected void Shoot(float angle)
+    {
+        lastShot += Time.deltaTime;
+
+        //Checks to make sure that is currently shooting and last shot is greater than firerate
+        if (IsShooting && lastShot >= TankStats.ProjectileFirerate)
+        {   //Fires bullet
+            GameObject bullet;
+            //Shoots from barrel unless doesn't exist shoots from gameobject
+            if (barrel != null)
+            { bullet = Instantiate(TankStats.Projectile, barrel.position, transform.rotation); }
+            else
+            { bullet = Instantiate(TankStats.Projectile, this.transform.position, transform.rotation); }
+
+            Vector3 bulletAngle = new Vector3(0f,angle,0f) + bullet.transform.eulerAngles;
+            bullet.transform.eulerAngles = bulletAngle;
+
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * TankStats.ProjectileSpeed;
             bullet.GetComponent<BulletController>().Shooter = this.gameObject;
 
             lastShot = 0f;

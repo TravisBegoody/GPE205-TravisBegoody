@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05d92e03531422547a8192480d648eab, type: 3}
-  m_Name: BaseEnemy
+  m_Name: ShotgunEnemy
   m_EditorClassIdentifier: 
-  Health: 50
-  MoveSpeed: 5
-  TurnSpeed: 70
+  Health: 30
+  MoveSpeed: 3
+  TurnSpeed: 50
   SightRange: 50
-  SightFOV: 40
-  HearRange: 20
+  SightFOV: 90
+  HearRange: 10
   Projectile: {fileID: 6561451574750519015, guid: ea67b0a7ffa0bbf43be9b4d22ee41981, type: 3}
-  ProjectileSpeed: 5
-  ProjectileFirerate: 1.4
+  ProjectileSpeed: 2
+  ProjectileFirerate: 2
