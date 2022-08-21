@@ -10,6 +10,8 @@ public class PatrolEnemy : EnemyController
     //points to go between
     public List<Vector3> patrolPoints;
     public int currPoint;
+
+
     // Start is called before the first frame update
     void Start()
     {

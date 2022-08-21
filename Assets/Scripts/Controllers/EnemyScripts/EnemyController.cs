@@ -194,7 +194,6 @@ public class EnemyController : CharacterController
     //Stops the pawn til it is facing towards the position
     public void TurnTowards(Vector3 position)
     {
-        Debug.Log(Vector3.Angle(this.transform.forward, position - this.transform.position));
         if (Vector3.Angle(this.transform.forward, position - this.transform.position) > 12f)
         {
             pawn.isStopped = true;

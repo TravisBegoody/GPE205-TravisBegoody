@@ -7,6 +7,7 @@ public class PlayerController : CharacterController
     float HorizontalInput;
     float VerticalInput;
 
+    bool canMove;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,17 @@ public class PlayerController : CharacterController
         lastShot = TankStats.ProjectileFirerate;
         ///Should as some point create a pool for itself to hold all of its
         ///bullets which will be deactivated and activated when shooting
+        ///
+        canMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerInput();
+        if (canMove)
+        {
+            PlayerInput();
+        }
         Movement();
         Shoot();
     }
@@ -53,5 +59,9 @@ public class PlayerController : CharacterController
         GameManager.Instance.RemovePlayer(this);
 
         gameObject.SetActive(false);
+    }
+    public void ChangeInput(bool movable)
+    {
+        canMove = movable;
     }
 }
