@@ -42,9 +42,9 @@ public class PatrolEnemy : EnemyController
             NavMeshHit hit;
             if (NavMesh.SamplePosition(randomPoint, out hit, idleRadius, 1)) // Checks if it finds a point or not and stops if it doesn't
             {
+                Instantiate(new GameObject(), hit.position,Quaternion.identity);
                 patrolPoints.Add(hit.position);
             }
-
         }
     }
     // Update is called once per frame
@@ -82,7 +82,6 @@ public class PatrolEnemy : EnemyController
                 //DetermineState();
                 break;
             case AIStates.Flee:
-                Debug.Log("Health Is Low");
                 break;
             case AIStates.Idle:
                 MoveToNextPoint();

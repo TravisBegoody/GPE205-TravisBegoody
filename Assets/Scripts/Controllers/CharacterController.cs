@@ -91,12 +91,18 @@ public class CharacterController : MonoBehaviour
         }
     }
     //When character takes damage, applies damage and if health reaches 0 they die
-    public void Damage(float damage)
+    public virtual void Damage(float damage)
     {
         currentHealth -= damage;
 
         if (currentHealth <= 0f)
         { Death(); }
+    }
+    public virtual void Heal(float heal)
+    {
+        currentHealth += heal;
+
+        currentHealth = Mathf.Clamp(currentHealth, 0f, TankStats.Health);
     }
     //Sets up death for children classes
     public virtual void Death()

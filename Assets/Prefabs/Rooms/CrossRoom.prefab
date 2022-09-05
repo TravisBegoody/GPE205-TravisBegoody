@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7932004108204719622}
+  - component: {fileID: 2204971937109328889}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -30,6 +31,18 @@ Transform:
   m_Father: {fileID: 8605230511462938431}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2204971937109328889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804345385420362678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1180732338314848607
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +52,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6831901244133681930}
+  - component: {fileID: 1849999814877305126}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -60,6 +74,18 @@ Transform:
   m_Father: {fileID: 8605230511462938431}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1849999814877305126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180732338314848607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1733731161543804138
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,6 +95,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4266229956468088842}
+  - component: {fileID: 9021155598389195539}
   m_Layer: 0
   m_Name: EnemySpot
   m_TagString: Untagged
@@ -90,6 +117,18 @@ Transform:
   m_Father: {fileID: 3530075050707210661}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9021155598389195539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733731161543804138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2113095839072252492
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8417062926415166543}
+  - component: {fileID: 7076227244974224750}
   m_Layer: 0
   m_Name: EnemySpot
   m_TagString: Untagged
@@ -120,6 +160,61 @@ Transform:
   m_Father: {fileID: 3530075050707210661}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7076227244974224750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113095839072252492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2373365137440943734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6662097987725632884}
+  - component: {fileID: 3475122637844452427}
+  m_Layer: 0
+  m_Name: PlayerSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6662097987725632884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373365137440943734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.43, z: -9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8605230511462938431}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3475122637844452427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373365137440943734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0170fd4c5475d6949ae258b91d807868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4552331307474346673
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 200677534597854284}
+  - component: {fileID: 9151810457316918228}
   m_Layer: 0
   m_Name: EnemySpot (2)
   m_TagString: Untagged
@@ -150,6 +246,18 @@ Transform:
   m_Father: {fileID: 3530075050707210661}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9151810457316918228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552331307474346673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6539091855659115557
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,6 +301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4606373485999623682}
+  - component: {fileID: 7442474185608644102}
   m_Layer: 0
   m_Name: EnemySpot (1)
   m_TagString: Untagged
@@ -214,6 +323,18 @@ Transform:
   m_Father: {fileID: 3530075050707210661}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7442474185608644102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119398366576084760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8605230510541678281
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +861,7 @@ Transform:
   - {fileID: 8605230512062958212}
   - {fileID: 8605230512116488770}
   - {fileID: 8605230511033342036}
+  - {fileID: 6662097987725632884}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

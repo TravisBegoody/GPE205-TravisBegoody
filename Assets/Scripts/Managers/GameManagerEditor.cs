@@ -17,7 +17,7 @@ public class GameManagerEditor : Editor
             {
                 gameMan.StartUpdate();
             }
-            gameMan.seed = lastSeed;
+            lastSeed = gameMan.seed;
         }
         if (GUILayout.Button("Generate Map"))
         {

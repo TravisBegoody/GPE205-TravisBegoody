@@ -131,6 +131,49 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &1406262111967809510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859992092469416888}
+  - component: {fileID: 6756748913750382825}
+  m_Layer: 0
+  m_Name: PlayerSPawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1859992092469416888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406262111967809510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.42, y: 0.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5968227597049177001}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6756748913750382825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406262111967809510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0170fd4c5475d6949ae258b91d807868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767888315174843141
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4297922682052838986}
+  - component: {fileID: 6459051626688199118}
   m_Layer: 0
   m_Name: EnemySpot
   m_TagString: Untagged
@@ -195,6 +239,18 @@ Transform:
   m_Father: {fileID: 1764643025729170914}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6459051626688199118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614076257440625529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2654860522786241451
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025762374870889201}
+  - component: {fileID: 7421242540885290781}
   m_Layer: 0
   m_Name: EnemySpot (2)
   m_TagString: Untagged
@@ -613,6 +670,18 @@ Transform:
   m_Father: {fileID: 1764643025729170914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7421242540885290781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588676889245556170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4575420919470830368
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3992222483816118214}
+  - component: {fileID: 4375516248168954414}
   m_Layer: 0
   m_Name: Spot
   m_TagString: Untagged
@@ -740,6 +810,18 @@ Transform:
   m_Father: {fileID: 469740867971730910}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4375516248168954414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5673413838602052991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5797886947209263904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,6 +2028,7 @@ Transform:
   - {fileID: 6323191162925328243}
   - {fileID: 6770663564803580790}
   - {fileID: 4086984190276127330}
+  - {fileID: 1859992092469416888}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2176,6 +2259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7083376136999617977}
+  - component: {fileID: 5522777889658008322}
   m_Layer: 0
   m_Name: Spot
   m_TagString: Untagged
@@ -2197,6 +2281,18 @@ Transform:
   m_Father: {fileID: 469740867971730910}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5522777889658008322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5991639699929093726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6132817537451545118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6054879792280112725}
+  - component: {fileID: 3026758678021821381}
   m_Layer: 0
   m_Name: EnemySpot (3)
   m_TagString: Untagged
@@ -2227,6 +2324,18 @@ Transform:
   m_Father: {fileID: 1764643025729170914}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3026758678021821381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132817537451545118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6731846239528930062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,6 +2345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5573765381822534877}
+  - component: {fileID: 7970527387146925116}
   m_Layer: 0
   m_Name: Spot
   m_TagString: Untagged
@@ -2257,6 +2367,18 @@ Transform:
   m_Father: {fileID: 469740867971730910}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7970527387146925116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731846239528930062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6895623253632537950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,6 +2388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170746201525091259}
+  - component: {fileID: 5254184303838861884}
   m_Layer: 0
   m_Name: Spot
   m_TagString: Untagged
@@ -2287,6 +2410,18 @@ Transform:
   m_Father: {fileID: 469740867971730910}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5254184303838861884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6895623253632537950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c91d6118b89e424d87bdfe9c51e2168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7082127987813154804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,6 +2528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6354182767526710021}
+  - component: {fileID: 8987774819111506885}
   m_Layer: 0
   m_Name: EnemySpot (1)
   m_TagString: Untagged
@@ -2414,6 +2550,18 @@ Transform:
   m_Father: {fileID: 1764643025729170914}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8987774819111506885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696157880022611935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef6d5183f2c8f64f87724783191f160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8981530118107352535
 GameObject:
   m_ObjectHideFlags: 0

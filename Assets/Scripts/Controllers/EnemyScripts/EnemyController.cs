@@ -9,7 +9,7 @@ public class EnemyController : CharacterController
     public enum AISenses { See, Hear, Near, None };
     [SerializeField] protected AIStates currentState;
     [SerializeField] protected AISenses currentSense;
-    private float timeInState;
+
     protected NavMeshAgent pawn;
     protected NavMeshHit fleePoint;
 
@@ -99,7 +99,6 @@ public class EnemyController : CharacterController
                 }
                 break;
             case AIStates.Idle:
-                Debug.Log("Enemy is idle");
                 break;
         }
     }

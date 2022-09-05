@@ -52,7 +52,6 @@ public class ShotgunEnemy : EnemyController
                 }
                 break;
             case AIStates.Idle:
-                Debug.Log("Enemy is idle");
                 break;
         }
     }

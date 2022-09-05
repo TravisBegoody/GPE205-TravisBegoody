@@ -45,7 +45,7 @@ public class BulletController : MonoBehaviour
         }
         if (bullet != null && bullet.bulletTarget != this.bulletTarget)
         {
-            Debug.Log("Hit Another Bullet");
+            //Debug.Log("Hit Another Bullet");
             if (Explosion != null)
             {
                 Instantiate(Explosion, this.transform.position, Quaternion.identity);
@@ -53,9 +53,8 @@ public class BulletController : MonoBehaviour
             Destroy(this.gameObject);
         }
         //if it isnt this shooter or bullet target type then it doesnt hit
-        else if (other.gameObject != Shooter && bullet == null)
+        else if (other.gameObject != Shooter && bullet == null && other.tag != "PowerUp")
         {
-            Debug.Log("Hit Something");
             if (Explosion != null)
             {
                 Instantiate(Explosion, this.transform.position, Quaternion.identity);
